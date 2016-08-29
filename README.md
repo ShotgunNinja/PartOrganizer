@@ -23,46 +23,22 @@ To avoid showing a part in a custom category and in the stock category at the sa
 ###Included categories
 Only a category is provided, as an example: Electrical. It include solar panels, batteries, lights, rtg and fuel cells.
 
-###Tutorial
+###How to add a category
 ```
 // define the category
 EditorCategory
 {
-  name = Electrical
-  tag = _electrical
-  icon = PartOrganizer/Electrical/electrical
-  tooltip = Electrical
+  name = ExplosiveDevices
+  tag = _explosive
+  icon = MyMod/icons/tnt
+  tooltip = Explosive devices
 }
 
 
-// solar panels
-@PART[solarPanels1,solarPanels2,solarPanels3,solarPanels4,solarPanels5,largeSolarPanel]
+// add parts to that category
+@PART[Bomb01,NuclearDevice]
 {
-  @category = none
-  @tags ^= :$: _electrical:
-}
-
-
-// batteries
-@PART[batteryPack,batteryBankMini,batteryBank,batteryBankLarge,ksp_r_largeBatteryPack]
-{
-  @category = none
-  @tags ^= :$: _electrical:
-}
-
-
-// rtg and fuel cells
-@PART[rtg,FuelCell,FuelCellArray]
-{
-  @category = none
-  @tags ^= :$: _electrical:
-}
-
-
-// lights
-@PART[spotLight1,spotLight2]
-{
-  @category = none
-  @tags ^= :$: _electrical:
+  @tags ^= :$: _explosive:    // add tag to the part
+  @category = none            // optionally, hide the part from stock category  
 }
 ```
