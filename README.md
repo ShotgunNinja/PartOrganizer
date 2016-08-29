@@ -23,7 +23,7 @@ To avoid showing a part in a custom category and in the stock category at the sa
 ###Included categories
 Only a category is provided, as an example: Electrical. It include solar panels, batteries, lights, rtg and fuel cells.
 
-###How to add a category
+###Adding a category
 ```
 // define the category
 EditorCategory
