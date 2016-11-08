@@ -50,12 +50,6 @@
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="KSPCore">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\KSPCore.dll</HintPath>
-    </Reference>
-    <Reference Include="KSPUtil">
-      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\KSPUtil.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -67,6 +61,9 @@
     <Reference Include="UnityEngine">
       <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Games\KSP\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PartOrganizer.cs" />
@@ -77,6 +74,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy Z:\kspmod\PartOrganizer\obj\Release\PartOrganizer.dll C:\Games\KSP\GameData\PartOrganizer\ /y</PostBuildEvent>
+    <PostBuildEvent>xcopy D:\ksp\part_organizer\PartOrganizer\obj\Release\PartOrganizer.dll C:\Games\KSP\GameData\PartOrganizer\ /y</PostBuildEvent>
   </PropertyGroup>
 </Project>
