@@ -21,7 +21,7 @@ The tag system is exploited to identify parts that belong to a category. In the 
 To avoid showing a part in a custom category and in the stock category at the same time, the part 'category' field can be set to 'none'. This reduce the clutter, but has the drawback that the part can't be filtered by tag anymore in the stock search system.
 
 ###Included categories
-Only a category is provided, as an example: Electrical. It include solar panels, batteries, lights, rtg and fuel cells.
+Only a category is provided, as an example: Scanner. It include stock and SCANsat scanners.
 
 ###Adding a category
 ```
